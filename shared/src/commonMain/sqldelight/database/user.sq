@@ -1,0 +1,5 @@
+insertUser:
+INSERT OR REPLACE INTO userEntity(localUserId, name, description) VALUES(?,?,?);
+
+getAllUser:
+SELECT * FROM userEntity;

@@ -1,0 +1,5 @@
+insertUserData:
+INSERT OR REPLACE INTO userDataEntity(localUserId, name) VALUES(?,?);
+
+getAllUserData:
+SELECT * FROM userDataEntity;

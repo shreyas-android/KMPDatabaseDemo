@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS userEntity (localUserId INTEGER NOT NULL,  name TEXT NOT NULL, PRIMARY KEY(localUserId));
+
+
+CREATE INDEX IF NOT EXISTS index_user_local_user_id ON userEntity (localUserId);
+
+CREATE TABLE IF NOT EXISTS userDataEntity (localUserId INTEGER NOT NULL,  name TEXT NOT NULL, PRIMARY KEY(localUserId));
